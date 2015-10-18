@@ -12,15 +12,15 @@ while True:
     #print(strftime("%I:%M:%S %p", time.localtime()))
     current = strftime("%I:%M:%S %p", time.localtime())
     if current == alarm :
-        while True:
-            i = 0
+        pick = False
+        alarm = "0"
+        i = 0
+        while i != 6:
             print "WAKE UP"
             print "GET UP"
             winsound.Beep(Freq,Dur)
-            if i == 20:
-                break
-            else:
-                i += 1
+            i += 1
+
 
     if pick != True :
         print("Enter time you would like to wake up please! HH:MM:SS AM/PM")
